@@ -1,18 +1,23 @@
+let count = document.getElementById("myCounter");
+let increase = document.getElementById("myCountButton");
+let decrease = document.getElementById("myDecreaseButton");
+let reset =  document.getElementById("myResetButton");
 let val = 0;
 
-document.getElementById("myCountButton").onclick = function(){
+
+increase.onclick = function(){
     val++;
     
-    document.getElementById("myCounter").textContent = val;
+    count.textContent = val;
 }
 
-document.getElementById("myDecreaseButton").onclick = function(){
+decrease.onclick = function(){
     val--;
     
-    document.getElementById("myCounter").textContent = val;
+    count.textContent = val;
 }
-document.getElementById("myResetButton").onclick = function(){
+reset.onclick = function(){
     val=0;
     
-    document.getElementById("myCounter").textContent = val;
+    count.textContent = val;
 }
